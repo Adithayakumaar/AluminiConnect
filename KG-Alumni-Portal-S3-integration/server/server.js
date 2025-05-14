@@ -74,7 +74,9 @@ function generate15CharAlphanumeric() {
 
 const randomString = generate15CharAlphanumeric();
 
-
+app.get("/api/test",async(req,res)=>{
+        res.send("Backend Works!");
+})
 
 
 app.post("/api/postJob", async (req, res) => {
